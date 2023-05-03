@@ -1,0 +1,348 @@
+:root {
+  --primary-color: #ef394e;
+  --secondary-color: #d6d6e4;
+  --less-imp-text: #a97c6d;
+  --green: #39ae00;
+  --purple: #941b80;
+  --green-blue: #007295;
+  --app-color: #3c4b6d;
+}
+
+.text-secondary {
+  color: var(--purple) !important;
+}
+
+.bg-secondary {
+  background-color: var(--purple) !important;
+}
+
+.bg-primary {
+  background-color: var(--app-color);
+}
+
+.bg-success {
+  background-color: #39ae00 !important;
+}
+
+.text-success {
+  color: #39ae00 !important;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.font-1 {
+  font-size: 0.8rem;
+}
+
+.nav1-fix i {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.nav1-fix i::before {
+  height: 100%;
+  margin-left: 0.4rem;
+}
+
+.offcanvas-fix li {
+  margin-bottom: 1rem;
+}
+
+.offcanvas-fix i {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  opacity: 50%;
+}
+
+.bi::before {
+  height: 100%;
+}
+
+.offcanvas-fix a {
+  color: black;
+  opacity: 1;
+}
+
+.nav1-fix li a {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.carousel .carousel-item {
+  height: 400px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  min-height: 400px;
+}
+
+@media (max-width: 1030px) {
+  
+}
+
+.belatrix-fix {
+  width: 90%;
+}
+
+.belatrix-fix img {
+  width: 3rem;
+}
+
+.belatrix-fix .card,
+.belatrix-fix .card-body {
+  padding: 0px;
+  margin-top: 0.5rem;
+  border: none;
+}
+
+.belatrix-fix .card-title {
+  font-size: 0.8rem;
+  opacity: 75%;
+}
+
+.scrollspy-example {
+  max-width: 81.25rem;
+}
+
+.wow-fix .overflow-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.wow-fix .overflow-scroll {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.wow-fix {
+  max-width: 81.5rem;
+}
+
+.wow-fix .h6 {
+  font-size: 0.8rem;
+}
+
+.wow-fix .card {
+  min-width: 11.25rem;
+  border-radius: 0%;
+}
+
+.super-fix {
+  max-width: 78rem;
+}
+
+.super-fix .position-relative {
+  width: 4rem;
+}
+
+.cat-fix .h6{
+  font-size: 0.8rem;
+}
+
+.cat-fix .card {
+  margin: 0;
+  padding: 0;
+}
+
+.cat-fix img {
+  width: 75%;
+}
+
+.a-3-cards-fix {
+  max-width: 83.5rem;
+}
+
+.sugg-fix {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sugg-fix img {
+  width: 3.75rem;
+}
+
+.sugg-fix .card {
+  width: 11.25rem;
+}
+
+.brand-fix img{
+  width: 4.25rem;
+}
+
+.acces-fix .card {
+  margin: 0px !important;
+}
+
+.digiplus-fix {
+  max-width: 81.5rem;
+}
+
+.digiplus-fix .digi-box{
+  background-image: url("../images/digiplus/plus-widget.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  position: relative;
+}
+
+.digiplus-fix .card-footer {
+  z-index: 1 !important;
+}
+
+.digi-club {
+  max-width: 81.5rem;
+}
+
+.digi-club img {
+  width: 8rem;
+}
+
+.most-bought img{
+  width: 5.37rem;
+}
+
+.most-bought p {
+  font-size: 0.8rem !important;
+  width: 10rem;
+}
+
+.most-bought .flex-column {
+  width: 18rem !important;
+}
+
+.a-4-cards-fix {
+  max-width: 81.5rem;
+}
+
+.selected {
+  max-width: 81.5rem;
+}
+
+.selected .h6 {
+  font-size: 0.8rem !important;
+}
+
+.selected img {
+  width: 8.1rem !important;
+}
+
+.selected .d-grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.foot-list-fix .h5{
+  font-size: 0.9rem;
+}
+
+.foot-list-fix .h6{
+  font-size: 0.8rem;
+}
+
+@media (min-width: 992px) {
+  .brand-fix img{
+    width: 6.87rem;
+  }
+
+  .acces-fix img {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .cat-fix img {
+    width: 50%;
+  }
+
+  .sugg-fix {
+    overflow-x: auto;
+  }
+
+  .acces-fix img {
+    max-width: 95%;
+  }
+
+  .digiplus-fix .w-75 {
+    width: 100% !important;
+  }
+
+  .digiplus-fix .card .w-75 {
+    width: 80% !important;
+  }
+
+  .digiplus-fix .w-50 {
+    width: 100% !important;
+  }
+
+  .digiplus-fix .digi-box{
+    height: 25rem;
+    background-position: left;
+  } 
+}
+
+@media (max-width: 1030px) {
+  .carousel-item img {
+    min-height: 268px;
+  }
+
+  .carousel .carousel-item {
+    height: 268px;
+  }
+
+  .super-fix-logo {
+    height: 2.37rem;
+  }
+
+  .wow-fix {
+    border-radius: 20px;
+  }
+
+  .selected .d-grid {
+    grid-template-columns: repeat(2,1fr) !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hide1 {
+    display: none !important;
+  }
+
+  .carousel-item img {
+    min-height: 300px;
+  }
+
+  .carousel .carousel-item {
+    height: 300px;
+  }
+
+  .selected .d-grid {
+    grid-template-columns: repeat(5 , 1fr);
+  }
+}

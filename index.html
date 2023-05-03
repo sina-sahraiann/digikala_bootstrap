@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Rakkas&family=Vazirmatn:wght@500;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="offcanvas offcanvas-end" dir="rtl" id="demo">
+            <div class="offcanvas-header">
+                <img class="w-25" src="images/Logo/digi.svg" alt="not found">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group offcanvas-fix nav1-fix d-flex flex-column p-0 align-items-stretch" dir="rtl">
+                    <li class="list-group-item text-dark font-1 px-2 ms-4"><a class="text-decoration-none text-dark"
+                            href="#"><i class="bi bi-list text-black"></i>دسته بندی کالاها</a>
+                    </li>
+                    <li class="list-group-item font-1 px-2 ">
+                        <a class="text-decoration-none text-dark" href="#">
+                            <i class="bi bi-egg-fill "></i>
+                            <span>سوپر مارکت</span>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item  font-1 px-2"><a class="text-decoration-none text-dark" href="#"><i
+                                class="bi bi-tag"></i>پرفروش ترین ها</a>
+                    </li>
+                    <li class="list-group-item  font-1 px-2"><a class="text-decoration-none text-dark" href="#"><i
+                                class="bi bi-tag"></i> تخفیف و پیشنهاد ها</a>
+                    </li>
+                    <li class="list-group-item  font-1 px-2"><a class="text-decoration-none text-dark" href="#"><i
+                                class="bi bi-tag"></i>شگفت انکیز</a>
+                    </li>
+                    <li class="list-group-item  font-1 px-2"><a class="text-decoration-none text-dark" href="#"><i
+                                class="bi bi-tag"></i>سوالی دارید؟</a>
+                    </li>
+                    <li class="list-group-item  font-1 px-2"><a class="text-decoration-none text-dark" href="#"><i
+                                class="bi bi-tag"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="container-fluid">
+            <div class="container-fluid d-flex justify-content-between navbar navbar-expand-lg bg-light">
+                <ul class=" navbar-nav me-auto d-none d-lg-flex justify-content-between align-items-start">
+                    <li class="nav-item h2 me-5"><a href="#"><i class="bi text-black bi-cart"></i></a></li>
+                    <li class="nav-item">
+                        <ul class="navbar-nav flex-center align-items-center">
+                            <li class="nav-item"><a href="#" class="text-black nav-link h2">ثبت نام</a></li>
+                            <li class="nav-item h4 ms-0">
+                                |
+                            </li>
+                            <li class="nav-item ms-0"><a href="#" class="nav-link text-black h2">ورود</a></li>
+                            <li class="nav-item h3"><a href="#" class="text-black nav-link h2"><i
+                                        class="bi bi-box-arrow-in-left"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="h1 d-lg-none"><a href="#"><i class=" bi bi-question-square text-black"></i></a></div>
+                <div class="d-lg-flex w-75 d-none justify-content-lg-end ">
+                    <form class="d-lg-flex d-none me-4 w-75 bg-light" role="search">
+                        <input class="bg-light w-100 form-control me-0 text-end" type="search" placeholder="جستجو"
+                            aria-label="Search">
+                        <button class="btn bg-dark bg-opacity-10" type="submit"><i
+                                class="ri-search-line h5"></i></button>
+                    </form>
+                    <div class="navbar-brand ">
+                        <a href="#"><img src="images/Logo/logo.svg" alt="not found"></a>
+                    </div>
+                </div>
+                <div class="navbar-brand d-lg-none">
+                    <a href="#"><img src="images/Logo/logo.svg" alt="not found"></a>
+                </div>
+                <div class="h1 d-lg-none"><a class="class=" btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#demo"><i class="bi bi-list text-black"></i></a></div>
+            </div>
+            <ul class="navbar-nav justify-content-between d-lg-flex d-none flex-row">
+                <li class="nav-item  d-flex align-items-start">
+                    <div class="me-2 font-1 d-flex align-items-center h-100">
+                        لطفا شهر خود را انتخاب کنید
+                    </div>
+                    <div>
+                        <i class="me-2 bi bi-geo-alt-fill h6"></i>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <small>
+                        <ul id="nav-nav" class="list-group nav1-fix d-flex flex-row p-0" dir="rtl">
+                            <li class="list-group-item text-dark font-1 px-2"><a class="text-decoration-none text-dark"
+                                    href="#"><i class="bi bi-list text-black"></i>دسته بندی کالاها</a>
+                            </li>
+                            <li class="list-group-item opacity-75 font-1 px-2 ">
+                                <a class="text-decoration-none text-dark" href="#">
+                                    <i class="bi bi-egg-fill "></i>
+                                    <span>سوپر مارکت</span>
+                                </a>
+                            </li>
+
+                            <li class="list-group-item opacity-75 font-1 px-2"><a class="text-decoration-none text-dark"
+                                    href="#"><i class="bi bi-fire"></i>پرفروش ترین ها</a>
+                            </li>
+                            <li class="list-group-item opacity-75 font-1 px-2"><a class="text-decoration-none text-dark"
+                                    href="#"><i class="bi bi-tag"></i> تخفیف و پیشنهاد ها</a>
+                            </li>
+                            <li class="list-group-item opacity-75 font-1 px-2"><a class="text-decoration-none text-dark"
+                                    href="#"><i class="bi bi-tag"></i>شگفت انکیز</a>
+                            </li>
+                            <li class="list-group-item opacity-75 font-1 px-2"><a class="text-decoration-none text-dark"
+                                    href="#">سوالی دارید؟</a>
+                            </li>
+                            <li class="list-group-item opacity-75 font-1 px-2"><a class="text-decoration-none text-dark"
+                                    href="#">فروشنده شوید!</a>
+                            </li>
+                        </ul>
+                    </small>
+                </li>
+            </ul>
+        </nav>
+        <nav class="container-fluid">
+            <div
+                class="container-fluid flex-nowrap  d-lg-none justify-content-between navbar navbar-expand-lg bg-light">
+                <ul class=" navbar-nav me-auto  flex-row  d-flex justify-content-between align-items-center">
+                    <li class="nav-item h3 me-5"><a href="#"><i class="bi bi-cart text-black"></i></a></li>
+                    <li class="nav-item">
+                        <ul class="navbar-nav d-flex justify-content-between flex-row align-items-center">
+                            <li class="nav-item me-3"><a href="#" class="nav-link h2 text-black">ورود</a></li>
+                            <li class="nav-item h4 text-black"><a href="#" class="nav-link h2"><i
+                                        class="bi bi-box-arrow-in-left h3 text-black"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="w-100 d-flex justify-content-end">
+                    <form class="d-flex flex-row flex-nowrap w-75 me-4 rounded-2 " role="search">
+                        <input class="bg-dark bg-opacity-10  form-control me-0 text-end border-0 " type="search"
+                            placeholder="جستجو" aria-label="Search">
+                        <button class="btn bg-dark bg-opacity-10  border-0" type="submit"><i
+                                class="ri-search-line h5"></i></button>
+                    </form>
+                </div>
+            </div>
+            <ul class="navbar-nav d-flex d-lg-none flex-row text-dark justify-content-between">
+                <li class="nav-item">
+                    <a class="text-dark" href="#">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                </li>
+                <li class="nav-item font-1">
+                    <span>
+                        لطفا شهر خود را انتخاب کنید
+                    </span>
+                    <i class="me-2 text-primary bi bi-geo-alt-fill"></i>
+                </li>
+            </ul>
+        </nav>
+        <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/banner/1ab6d1266c56df9cfdeaec57e3ea4e8dc1efd476_1663861539.jpg"
+                        class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner/1ab6d1266c56df9cfdeaec57e3ea4e8dc1efd476_1663861539.jpg"
+                        class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner/1ab6d1266c56df9cfdeaec57e3ea4e8dc1efd476_1663861539.jpg"
+                        class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <i class="bi bi-arrow-left-circle-fill carousel-control-next-icon h1"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <i class="bi bi-arrow-right-circle-fill carousel-control-next-icon h1"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <section class="belatrix-fix row pt-3 mx-auto px-3">
+            <div class="card col-3 col-lg d-flex flex-column align-items-center">
+                <img class="card-img-top " src="images/digikala-bellatrix/اقصاتی.png " alt="not found">
+                <div class="card-body">
+                    <div class="card-title">دیجیکالا مهر</div>
+                </div>
+            </div>
+            <div class="card col-3 col-lg d-flex flex-column align-items-center">
+                <img class="card-img-top " src="images/digikala-bellatrix/آیفون.png " alt="not found">
+                <div class="card-body">
+                    <div class="card-title">دیجیکالا مهر</div>
+                </div>
+            </div>
+            <div class="card col-3 col-lg d-flex flex-column align-items-center">
+                <img class="card-img-top " src="images/digikala-bellatrix/جت.png" alt="not found">
+                <div class="card-body">
+                    <div class="card-title">دیجیکالا مهر</div>
+                </div>
+            </div>
+            <div class="card col-3 col-lg d-flex flex-column align-items-center">
+                <img class="card-img-top " src="images/digikala-bellatrix/سورپرایز.png " alt="not found">
+                <div class="card-body">
+                    <div class="card-title">دیجیکالا مهر</div>
+                </div>
+            </div>
+            <div class="card col-3 col-lg d-flex flex-column align-items-center">
+                <img class="card-img-top " src="images/digikala-bellatrix/ماموریت ها.png" alt="not found">
+                <div class="card-body">
+                    <div class="card-title">دیجیکالا مهر</div>
+                </div>
+            </div>
+            <div class="card col-3 col-lg d-flex flex-column align-items-center">
+                <img class="card-img-top " src="images/digikala-bellatrix/مدرسه.png" alt="not found">
+                <div class="card-body">
+                    <div class="card-title">دیجیکالا مهر</div>
+                </div>
+            </div>
+            <div class="card col-3 col-lg d-flex flex-column align-items-center">
+                <img class="card-img-top " src="images/digikala-bellatrix/مهر.png" alt="not found">
+                <div class="card-body">
+                    <div class="card-title">دیجیکالا مهر</div>
+                </div>
+            </div>
+            <div class="card col-3 col-lg d-flex flex-column align-items-center">
+                <img class="card-img-top " src="images/digikala-bellatrix/اقصاتی.png " alt="not found">
+                <div class="card-body">
+                    <div class="card-title">دیجیکالا مهر</div>
+                </div>
+            </div>
+
+
+        </section>
+        <section dir="rtl" class="wow-fix container-fluid mb-5 mx-auto bg-danger overflow-scroll py-lg-4 py-3">
+            <div class="d-flex wow-fix justify-content-start overflow-hidden gap-1" id="list-example">
+                <div class="card bg-transparent flex-column d-flex justify-content-center align-items-center rounded-2">
+                    <img class=" w-50 mb-2" src="images/Logo/amazing-typo.svg" alt="not found">
+                    <img class=" w-75" src="images/Logo/box.png" alt="not found">
+                    <div class="card-body text-center text-white h6 d-flex align-items-center">
+                        مشاهده بیشتر
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                </div>
+                <div class="card text-center bg-light rounded-end">
+                    <img class="card-img-top mx-auto pb-3 px-2"
+                        src="images/supermarket-wow/4027c5823684971f11d685fa5a4833d2c18af3e3_1655789082.jpg"
+                        alt="not found">
+                    <div
+                        class="card-body py-0  px-2 d-flex flex-row-reverse justify-content-between align-items-center">
+                        <div class="h6">159,000 تومان</div>
+                        <div class="badge bg-danger text-white h6">50%</div>
+                    </div>
+                    <div class="card-footer pt-0 text-start opacity-50 text-decoration-line-through h6 px-5">
+                        159,000
+                    </div>
+                </div>
+                <div class="card text-center bg-light">
+                    <img class="card-img-top mx-auto pb-3 px-2"
+                        src="images/supermarket-wow/4027c5823684971f11d685fa5a4833d2c18af3e3_1655789082.jpg"
+                        alt="not found">
+                    <div
+                        class="card-body py-0  px-2 d-flex flex-row-reverse justify-content-between align-items-center">
+                        <div class="h6">159,000 تومان</div>
+                        <div class="badge bg-danger text-white h6">50%</div>
+                    </div>
+                    <div class="card-footer pt-0 text-start opacity-50 text-decoration-line-through h6 px-5">
+                        159,000
+                    </div>
+                </div>
+                <div class="card text-center bg-light">
+                    <img class="card-img-top mx-auto pb-3 px-2"
+                        src="images/supermarket-wow/4027c5823684971f11d685fa5a4833d2c18af3e3_1655789082.jpg"
+                        alt="not found">
+                    <div
+                        class="card-body py-0  px-2 d-flex flex-row-reverse justify-content-between align-items-center">
+                        <div class="h6">159,000 تومان</div>
+                        <div class="badge bg-danger text-white h6">50%</div>
+                    </div>
+                    <div class="card-footer pt-0 text-start opacity-50 text-decoration-line-through h6 px-5">
+                        159,000
+                    </div>
+                </div>
+                <div class="card text-center bg-light">
+                    <img class="card-img-top mx-auto pb-3 px-2"
+                        src="images/supermarket-wow/4027c5823684971f11d685fa5a4833d2c18af3e3_1655789082.jpg"
+                        alt="not found">
+                    <div
+                        class="card-body py-0  px-2 d-flex flex-row-reverse justify-content-between align-items-center">
+                        <div class="h6">159,000 تومان</div>
+                        <div class="badge bg-danger text-white h6">50%</div>
+                    </div>
+                    <div class="card-footer pt-0 text-start opacity-50 text-decoration-line-through h6 px-5">
+                        159,000
+                    </div>
+                </div>
+                <div class="card text-center bg-light">
+                    <img class="card-img-top mx-auto pb-3 px-2"
+                        src="images/supermarket-wow/4027c5823684971f11d685fa5a4833d2c18af3e3_1655789082.jpg"
+                        alt="not found">
+                    <div
+                        class="card-body py-0  px-2 d-flex flex-row-reverse justify-content-between align-items-center">
+                        <div class="h6">159,000 تومان</div>
+                        <div class="badge bg-danger text-white h6">50%</div>
+                    </div>
+                    <div class="card-footer pt-0 text-start opacity-50 text-decoration-line-through h6 px-5">
+                        159,000
+                    </div>
+                </div>
+                <div class="card text-center bg-light">
+                    <img class="card-img-top mx-auto pb-3 px-2"
+                        src="images/supermarket-wow/4027c5823684971f11d685fa5a4833d2c18af3e3_1655789082.jpg"
+                        alt="not found">
+                    <div
+                        class="card-body py-0  px-2 d-flex flex-row-reverse justify-content-between align-items-center">
+                        <div class="h6">159,000 تومان</div>
+                        <div class="badge bg-danger text-white h6">50%</div>
+                    </div>
+                    <div class="card-footer pt-0 text-start opacity-50 text-decoration-line-through h6 px-5">
+                        159,000
+                    </div>
+                </div>
+                <div class="card text-center bg-light rounded-start">
+                    <img class="card-img-top mx-auto pb-3 px-2"
+                        src="images/supermarket-wow/4027c5823684971f11d685fa5a4833d2c18af3e3_1655789082.jpg"
+                        alt="not found">
+                    <div
+                        class="card-body py-0  px-2 d-flex flex-row-reverse justify-content-between align-items-center">
+                        <div class="h6">159,000 تومان</div>
+                        <div class="badge bg-danger text-white h6">50%</div>
+                    </div>
+                    <div class="card-footer pt-0 text-start opacity-50 text-decoration-line-through h6 px-5">
+                        159,000
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="d-flex super-fix container align-items-end flex-column-reverse flex-lg-row justify-content-between mb-5 px-5 mx-auto">
+            <div class="d-flex w-100 justify-content-lg-start justify-content-between mt-4">
+                <a href="#" class="text-success text-decoration-none h6 d-flex align-items-center">
+                    <i class="ri-arrow-left-fillwow me-2"></i>
+                    <div class="d-none d-lg-block"> بیش از صد کالا</div>
+                </a>
+                <div class="d-flex ms-2 overflow-hidden">
+                    <div class="position-relative ms-3">
+                        <img class="w-100"
+                            src="images/supermarket-wow/7b909fe2cb331170306d361b4b24991e7b6d17e2_1656122727.jpg"
+                            alt="not found">
+                        <div class="badge p-1 bg-danger text-white position-absolute bottom-0 end-0">%35</div>
+                    </div>
+                    <div class="position-relative ms-3">
+                        <img class="w-100"
+                            src="images/supermarket-wow/30751c5a8ea2d01becf73655dedb5052918cdad2_1603794462.jpg"
+                            alt="not found">
+                        <div class="badge p-1 bg-danger text-white position-absolute bottom-0 end-0">%35</div>
+                    </div>
+                    <div class="position-relative ms-3">
+                        <img class="w-100"
+                            src="images/supermarket-wow/4027c5823684971f11d685fa5a4833d2c18af3e3_1655789082.jpg"
+                            alt="not found">
+                        <div class="badge p-1 bg-danger text-white position-absolute bottom-0 end-0">%35</div>
+                    </div>
+                    <div class="position-relative ms-3">
+                        <img class="w-100"
+                            src="images/supermarket-wow/62e6d99ed1c78311a0a67c1557aac4cfe2d28ae2_1637670841.jpg"
+                            alt="not found">
+                        <div class="badge p-1 bg-danger text-white position-absolute bottom-0 end-0">%35</div>
+                    </div>
+                    <div class="position-relative ms-3">
+                        <img class="w-100"
+                            src="images/supermarket-wow/7b909fe2cb331170306d361b4b24991e7b6d17e2_1656122727.jpg"
+                            alt="not found">
+                        <div class="badge p-1 bg-danger text-white position-absolute bottom-0 end-0">%35</div>
+                    </div>
+                    <div class="position-relative ms-3">
+                        <img class="w-100"
+                            src="images/supermarket-wow/7b909fe2cb331170306d361b4b24991e7b6d17e2_1656122727.jpg"
+                            alt="not found">
+                        <div class="badge p-1 bg-danger text-white position-absolute bottom-0 end-0">%35</div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-flex justify-content-end align-items-center d-none">
+                <div dir="ltr"
+                    class="hide1 py-0 text-white rounded-5 me-3 bg-success d-flex align-items-center justify-content-center text-nowrap p-1">
+                    تا 54% تخفیف</div>
+                <img class="d-block w-75" src="images/supermarket-wow/amazing-title.svg" alt="not found">
+                <img class="d-block w-20" src="images/supermarket-wow/fresh.png" alt="">
+            </div>
+            <div class="d-flex justify-content-end align-items-center d-lg-none super-fix-logo">
+                <img class="d-block w-50" src="images/supermarket-wow/amazing-title.svg" alt="not found">
+                <img class="h-100 " src="images/supermarket-wow/fresh.png" alt="">
+            </div>
+        </section>
+        <section class="row g-3 super-fix mx-auto">
+            <img class="col-6 col-lg-3 rounded-4"
+                src="images/cards/0283930dca2a437d99c1ac1a141809e0f72427a7_1661350324.jpg" alt="not found">
+            <img class="col-6 col-lg-3 rounded-4"
+                src="images/cards/0283930dca2a437d99c1ac1a141809e0f72427a7_1661350324.jpg" alt="not found">
+            <img class="col-6 col-lg-3 rounded-4"
+                src="images/cards/0283930dca2a437d99c1ac1a141809e0f72427a7_1661350324.jpg" alt="not found">
+            <img class="col-6 col-lg-3 rounded-4"
+                src="images/cards/0283930dca2a437d99c1ac1a141809e0f72427a7_1661350324.jpg" alt="not found">
+        </section>
+        <section class="w-100 py-1 px-2 px-lg-5 mt-5">
+            <div class="text-center h4 pb-4 mb-5">دسته‌بندی‌های دیجی‌کالا
+            </div>
+            <div id="#demo-1"
+                class="row  cat-fix  w-100 g-5 mx-3 mx-lg-0 g-lg-2 text-center align-items-center justify-content-center">
+                <div class="card d-flex flex-column align-items-center col-4 col-lg-2">
+                    <img class="card-img-top"
+                        src="images/categories/0c3cc1cb589df1c74c4ad95a742bb6df967956a8_1656161119.png" alt="not found">
+                    <div class="h6 mt-2 mt-lg-3 text-center text-nowrap">کالاهای سوپرمارکتی</div>
+                </div>
+                <div class="card cat-fix  d-flex flex-column align-items-center col-4 col-lg-2">
+                    <img class="card-img-top"
+                        src="images/categories/0c46d2532d61dd3a5b6a3afc17552c23c1b4d39e_1656160976.png" alt="not found">
+                    <div class="h6 mt-2 mt-lg-3 text-center text-nowrap">کالاهای سوپرمارکتی</div>
+                </div>
+                <div class="card cat-fix  d-flex flex-column align-items-center col-4 col-lg-2">
+                    <img class="card-img-top"
+                        src="images/categories/0cefa48f5c58adbbde8c5a76b22ee49de0e667f5_1656161101.png" alt="not found">
+                    <div class="h6 mt-2 mt-lg-3 text-center text-nowrap">کالاهای سوپرمارکتی</div>
+                </div>
+                <div class="card cat-fix  d-flex flex-column align-items-center col-4 col-lg-2">
+                    <img class="card-img-top"
+                        src="images/categories/1c44d5964f259e0725ec86ca9739de888f1862c7_1656161158 (1).png"
+                        alt="not found">
+                    <div class="h6 mt-2 mt-lg-3 text-center text-nowrap">کالاهای سوپرمارکتی</div>
+                </div>
+                <div class="card cat-fix  d-flex flex-column align-items-center col-4 col-lg-2">
+                    <img class="card-img-top"
+                        src="images/categories/1c44d5964f259e0725ec86ca9739de888f1862c7_1656161158.png" alt="not found">
+                    <div class="h6 mt-2 mt-lg-3 text-center text-nowrap">کالاهای سوپرمارکتی</div>
+                </div>
+                <div class="card cat-fix  d-flex flex-column align-items-center col-4 col-lg-2">
+                    <img class="card-img-top"
+                        src="images/categories/41d9c93f460475bd5253a70faa0b689605b083bf_1656160881 (1).png"
+                        alt="not found">
+                    <div class="h6 mt-2 mt-lg-3 text-center text-nowrap">کالاهای سوپرمارکتی</div>
+                </div>
+                <div class="card cat-fix  d-flex flex-column align-items-center col-4 col-lg-2">
+                    <img class="card-img-top"
+                        src="images/categories/41d9c93f460475bd5253a70faa0b689605b083bf_1656160881.png" alt="not found">
+                    <div class="h6 mt-2 mt-lg-3 text-center text-nowrap">کالاهای سوپرمارکتی</div>
+                </div>
+                <div class="card cat-fix  d-flex flex-column align-items-center col-4 col-lg-2">
+                    <img class="card-img-top"
+                        src="images/categories/5795b31a635f1e23df96a908c009f31744ede38f_1656160928.png" alt="not found">
+                    <div class="h6 mt-2 mt-lg-3 text-center text-nowrap">کالاهای سوپرمارکتی</div>
+                </div>
+                <div class="card cat-fix  d-flex flex-column align-items-center col-4 col-lg-2">
+                    <img class="card-img-top"
+                        src="images/categories/0c3cc1cb589df1c74c4ad95a742bb6df967956a8_1656161119.png" alt="not found">
+                    <div class="h6 mt-2 mt-lg-3 text-center text-nowrap">کالاهای سوپرمارکتی</div>
+                </div>
+                <div class="card cat-fix  d-flex flex-column align-items-center col-4 col-lg-2">
+                    <img class="card-img-top"
+                        src="images/categories/0c3cc1cb589df1c74c4ad95a742bb6df967956a8_1656161119.png" alt="not found">
+                    <div class="h6 mt-2 mt-lg-3 text-center text-nowrap">کالاهای سوپرمارکتی</div>
+                </div>
+                <div class="card cat-fix  d-flex flex-column align-items-center col-4 col-lg-2">
+                    <img class="card-img-top"
+                        src="images/categories/0c3cc1cb589df1c74c4ad95a742bb6df967956a8_1656161119.png" alt="not found">
+                    <div class="h6 mt-2 mt-lg-3 text-center text-nowrap">کالاهای سوپرمارکتی</div>
+                </div>
+
+            </div>
+        </section>
+        <section class="row a-3-cards-fix g-3 container-fluid my-3 mx-auto">
+            <img class="col-6 rounded-4" src="images/a-3-cards/138fcda41eabcd029b214fe57353ce7baafd8d66_1662183357.gif"
+                alt="not found">
+            <img class="col-6 rounded-4" src="images/a-3-cards/138fcda41eabcd029b214fe57353ce7baafd8d66_1662183357.gif"
+                alt="not found">
+        </section>
+        <section dir="rtl" class="mx-2 container sugg-fix a-3-cards-fix mx-auto">
+            <div class="text-center h4 my-5">
+                پیشنهاد های دیجیکالا
+            </div>
+            <div class="d-flex justify-content-start ms-5 sugg-fix">
+                <div class="d-flex flex-column text-center">
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column text-center">
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column text-center">
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column text-center">
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column text-center">
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column text-center">
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column text-center">
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="mx-auto" src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                            alt="not found">
+                        <div class="card-body">
+                            <div class="card-title h6">ساعت هوشمند</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section dir="rtl" class="mx-auto brand-fix">
+            <div class="text-center h4 mt-5 mb-2 d-flex flex-row-reverse align-items-center justify-content-center">
+                محبوب ترین برندها
+                <i class="ri-star-fill ms-2"></i>
+            </div>
+            <div class="d-flex justify-content-start align-items-center ">
+                <a href="#" class="px-3"><img src="images/brands/100010929.png" alt="not found">
+                </a>
+                <a href="#" class="px-3"><img
+                        src="images/brands/2c36ceb629598fa31b9b321fcd4e47773bd93ef7_1649498016.png" alt="not found">
+                </a>
+                <a href="#" class="px-3"><img src="images/brands/3518.png" alt="not found">
+                </a>
+                <a href="#" class="px-3"><img
+                        src="images/brands/7d615272ba7fc5dd708195ae858e2971de86a06f_1649498033.png" alt="not found">
+                </a>
+                <a href="#" class="px-3"><img
+                        src="images/brands/9557cc91dff29467aec192718c3a2eb67496aa4d_1632226328.png" alt="not found">
+                </a>
+                <a href="#" class="px-3"><img src="images/brands/6091.png" alt="not found">
+                </a>
+                <a href="#" class="px-3"><img
+                        src="images/brands/af664f0bcf9bc412b741c618e6e52fc2d090198f_1619269008.png" alt="not found">
+                </a>
+                <a href="#" class="px-3"><img src="images/brands/100010929.png" alt="not found">
+                </a>
+                <a href="#" class="px-3"><img
+                        src="images/brands/7d615272ba7fc5dd708195ae858e2971de86a06f_1649498033.png" alt="not found">
+                </a>
+                <a href="#" class="px-3"><img
+                        src="images/brands/9557cc91dff29467aec192718c3a2eb67496aa4d_1632226328.png" alt="not found">
+                </a>
+                <a href="#" class="px-3"><img src="images/brands/3518 (1).png" alt="not found">
+                </a>
+                <a href="#" class="px-3"><img
+                        src="images/brands/7d615272ba7fc5dd708195ae858e2971de86a06f_1649498033.png" alt="not found">
+                </a>
+            </div>
+        </section>
+        <section dir="rtl" class="row acces-fix my-5">
+            <div class="card mx-4 my-3 d-flex flex-column align-items-center col-12 col-lg">
+                <div class="card-body  d-flex flex-column align-items-start">
+                    <div class="card-title">گوشی موبایل</div>
+                    <div class="card-text mb-2">بر اساس بازدید های شما</div>
+                    <div class="row g-3">
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+
+                    </div>
+                    <div class="card-footer w-100 d-flex align-items-center justify-content-center flex-row-reverse"><i
+                            class="ri-arrow-left-s-line"></i>مشاهده بیشتر</div>
+                </div>
+            </div>
+            <div class="card mx-4 my-3 d-flex flex-column align-items-center col-12 col-lg">
+                <div class="card-body  d-flex flex-column align-items-start">
+                    <div class="card-title">گوشی موبایل</div>
+                    <div class="card-text mb-2">بر اساس بازدید های شما</div>
+                    <div class="row g-3">
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+
+                    </div>
+                    <div class="card-footer w-100 d-flex align-items-center justify-content-center flex-row-reverse"><i
+                            class="ri-arrow-left-s-line"></i>مشاهده بیشتر</div>
+                </div>
+            </div>
+            <div class="card mx-4 my-3 d-flex flex-column align-items-center col-12 col-lg">
+                <div class="card-body  d-flex flex-column align-items-start">
+                    <div class="card-title">گوشی موبایل</div>
+                    <div class="card-text mb-2">بر اساس بازدید های شما</div>
+                    <div class="row g-3">
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+
+                    </div>
+                    <div class="card-footer w-100 d-flex align-items-center justify-content-center flex-row-reverse"><i
+                            class="ri-arrow-left-s-line"></i>مشاهده بیشتر</div>
+                </div>
+            </div>
+            <div class="card mx-4 my-3 d-flex flex-column align-items-center col-12 col-lg">
+                <div class="card-body  d-flex flex-column align-items-start">
+                    <div class="card-title">گوشی موبایل</div>
+                    <div class="card-text mb-2">بر اساس بازدید های شما</div>
+                    <div class="row g-3">
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+                        <div class="col-6 d-flex justify-content-center"><img class="d-block"
+                                src="images/accesories/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg"
+                                alt="not found"></div>
+
+                    </div>
+                    <div class="card-footer w-100 d-flex align-items-center justify-content-center flex-row-reverse"><i
+                            class="ri-arrow-left-s-line"></i>مشاهده بیشتر</div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="d-flex container bg-secondary flex-column-reverse mb-5 flex-lg-row justify-content-center digiplus-fix p-2 p-lg-3 rounded-4">
+            <div class="d-flex normal-box rounded-3 bg-white flex-column px-3 mb-1 mb-lg-0 w-75">
+                <div class="card-header text-secondary d-flex justify-content-between py-3">
+                    <div class="d-flex align-items-center"><i class="ri-arrow-left-s-line"></i>مشاهده همه</div>
+                    <div class="d-flex align-items-center text-dark"><i class="ri-rocket-fill"></i>ارسال فوری</div>
+                </div>
+                <div class="row g-xl-2 px-2">
+                    <div class="col-4 col-lg-6 col-xl-4 d-flex flex-column position-relative">
+                        <img class="mx-auto w-100"
+                            src="images/digiplus/50e70cb79e33843c55efd6e60985f914716ac8ef_1627128170.jpg"
+                            alt="not found">
+                        <div dir="ltr"
+                            class="card-footer position-absolute bottom-0 end-0 badge bg-white text-secondary text-end">
+                            تومان 5</div>
+                    </div>
+                    <div class="col-4 col-lg-6 col-xl-4 d-flex flex-column position-relative">
+                        <img class="mx-auto w-100"
+                            src="images/digiplus/50e70cb79e33843c55efd6e60985f914716ac8ef_1627128170.jpg"
+                            alt="not found">
+                        <div dir="ltr"
+                            class="card-footer position-absolute bottom-0 end-0 badge bg-white text-secondary text-end">
+                            تومان 5</div>
+                    </div>
+                    <div class="col-4 col-lg-6 col-xl-4 d-flex flex-column position-relative">
+                        <img class="mx-auto w-100"
+                            src="images/digiplus/50e70cb79e33843c55efd6e60985f914716ac8ef_1627128170.jpg"
+                            alt="not found">
+                        <div dir="ltr"
+                            class="card-footer position-absolute bottom-0 end-0 badge bg-white text-secondary text-end">
+                            تومان 5</div>
+                    </div>
+                    <div class="col-4 col-lg-6 col-xl-4 d-none d-md-flex f position-relative flex-column">
+                        <img class="mx-auto w-100"
+                            src="images/digiplus/50e70cb79e33843c55efd6e60985f914716ac8ef_1627128170.jpg"
+                            alt="not found">
+                        <div dir="ltr"
+                            class="card-footer position-absolute bottom-0 end-0 badge bg-white text-secondary text-end">
+                            تومان 5</div>
+                    </div>
+                    <div class="col-4 col-lg-6 col-xl-4 d-none d-md-flex f position-relative flex-column">
+                        <img class="mx-auto w-100"
+                            src="images/digiplus/50e70cb79e33843c55efd6e60985f914716ac8ef_1627128170.jpg"
+                            alt="not found">
+                        <div dir="ltr"
+                            class="card-footer position-absolute bottom-0 end-0 badge bg-white text-secondary text-end">
+                            تومان 5</div>
+                    </div>
+                    <div class="col-4 col-lg-6 col-xl-4 d-none d-md-flex f position-relative flex-column">
+                        <img class="mx-auto w-100"
+                            src="images/digiplus/50e70cb79e33843c55efd6e60985f914716ac8ef_1627128170.jpg"
+                            alt="not found">
+                        <div dir="ltr"
+                            class="card-footer position-absolute bottom-0 end-0 badge bg-white text-secondary text-end">
+                            تومان 5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex normal-box rounded-3 bg-white flex-column px-3 ms-lg-1 w-75 mb-2 mb-lg-0">
+                <div class="card-header text-secondary d-flex justify-content-between py-3">
+                    <div class="d-flex align-items-center"><i class="ri-arrow-left-s-line"></i>مشاهده همه</div>
+                    <div class="d-flex align-items-center text-dark"><i class="ri-rocket-fill"></i>ارسال فوری</div>
+                </div>
+                <div class="row g-xl-2 mb-4 px-2">
+                    <div class="col-4 col-lg-6 col-xl-4 d-flex flex-column position-relative">
+                        <img class="mx-auto w-100"
+                            src="images/digiplus/50e70cb79e33843c55efd6e60985f914716ac8ef_1627128170.jpg"
+                            alt="not found">
+                        <div dir="ltr"
+                            class="card-footer position-absolute bottom-0 end-0 badge bg-white text-secondary text-end">
+                            تومان 5</div>
+                    </div>
+                    <div class="col-4 col-lg-6 col-xl-4 d-flex flex-column position-relative">
+                        <img class="mx-auto w-100"
+                            src="images/digiplus/50e70cb79e33843c55efd6e60985f914716ac8ef_1627128170.jpg"
+                            alt="not found">
+                        <div dir="ltr"
+                            class="card-footer position-absolute bottom-0 end-0 badge bg-white text-secondary text-end">
+                            تومان 5</div>
+                    </div>
+                    <div class="col-4 col-lg-6 col-xl-4 d-flex flex-column position-relative">
+                        <img class="mx-auto w-100"
+                            src="images/digiplus/50e70cb79e33843c55efd6e60985f914716ac8ef_1627128170.jpg"
+                            alt="not found">
+                        <div dir="ltr"
+                            class="card-footer position-absolute bottom-0 end-0 badge bg-white text-secondary text-end">
+                            تومان 5</div>
+                    </div>
+                    <div class="col-4 col-lg-6 col-xl-4 d-none d-md-flex f position-relative flex-column">
+                        <img class="mx-auto w-100"
+                            src="images/digiplus/50e70cb79e33843c55efd6e60985f914716ac8ef_1627128170.jpg"
+                            alt="not found">
+                        <div dir="ltr"
+                            class="card-footer position-absolute bottom-0 end-0 badge bg-white text-secondary text-end">
+                            تومان 5</div>
+                    </div>
+                    <div class="col-4 col-lg-6 col-xl-4 d-none d-md-flex f position-relative flex-column">
+                        <img class="mx-auto w-100"
+                            src="images/digiplus/50e70cb79e33843c55efd6e60985f914716ac8ef_1627128170.jpg"
+                            alt="not found">
+                        <div dir="ltr"
+                            class="card-footer position-absolute bottom-0 end-0 badge bg-white text-secondary text-end">
+                            تومان 5</div>
+                    </div>
+                    <div class="col-4 col-lg-6 col-xl-4 d-none d-md-flex f position-relative flex-column">
+                        <img class="mx-auto w-100"
+                            src="images/digiplus/50e70cb79e33843c55efd6e60985f914716ac8ef_1627128170.jpg"
+                            alt="not found">
+                        <div dir="ltr"
+                            class="card-footer position-absolute bottom-0 end-0 badge bg-white text-secondary text-end">
+                            تومان 5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-75 card d-flex digi-box align-items-start bg-transparent flex-column flex-lg-row ps-lg-3">
+                <div class="d-flex w-100 flex-column justify-content-start align-items-end text-white card-body">
+                    <img src="images/digiplus/digiplus-logo.svg" alt="not found">
+                    <div class="h6 my-2">خدمات ویژه برای اعضای دیجی‌پلاس</div>
+                    <div class="btn border-white d-flex align-items-center text-white my-1 flex-row-reverse">عضویت<i
+                            class="me-1 ri-arrow-left-fill"></i></div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="d-flex bg-primary mx-auto digi-club mb-4 flex-column-reverse flex-lg-row justify-content-between align-items-center p-3 rounded-4">
+            <div class="d-flex justify-content-between rounded-2">
+                <div
+                    class="d-flex align-items-center flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between bg-white ms-1 overflow-hidden pe-3">
+                    <img src="images/digiclub/lucky-draw.png" alt="not found">
+                    <div class="d-flex align-items-start flex-column-reverse flex-lg-row">
+                        <div class="h6 me-2">جایزه</div>
+                        <div><i class="bi-arrow-90deg-left"></i></div>
+                    </div>
+                </div>
+                <div
+                    class="d-flex align-items-center flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between bg-white ms-1 overflow-hidden pe-3">
+                    <img src="images/digiclub/lucky-draw.png" alt="not found">
+                    <div class="d-flex align-items-start flex-column-reverse flex-lg-row">
+                        <div class="h6 me-2">جایزه</div>
+                        <div><i class="bi-arrow-90deg-left"></i></div>
+                    </div>
+                </div>
+                <div
+                    class="d-flex align-items-center flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between bg-white ms-1 overflow-hidden pe-3">
+                    <img src="images/digiclub/lucky-draw.png" alt="not found">
+                    <div class="d-flex align-items-start flex-column-reverse flex-lg-row">
+                        <div class="h6 me-2">جایزه</div>
+                        <div><i class="bi-arrow-90deg-left"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex w-100 justify-content-end mb-lg-0 mb-3"><img
+                    src="images/digiclub/digiclub-logo-white.svg" alt=""></div>
+        </section>
+        <section class="d-flex flex-column most-bought overflow-hidden">
+            <div class="d-flex align-items-center justify-content-center h4">پرفروشترین کالاها<i
+                    class="ms-2 ri-fire-fill h5 text-success"></i></div>
+            <div class="d-flex justify-content-end mx-auto">
+                <div dir="rtl" class="d-flex flex-column px-1">
+                    <div class="d-flex flex-row-reverse align-items-center">
+                        <div class="d-flex align-items-center opacity-75">
+                            <p>روغن نیمه جامد لادن پنجاه کیلوگرم</p>
+                        </div>
+                        <div class="h2 opacity-50 me-4 ms-2">1</div>
+                        <img src="images/most bought/121965651.jpg" alt="">
+                    </div>
+                    <div class="d-flex flex-row-reverse align-items-center">
+                        <div class="d-flex align-items-center opacity-75">
+                            <p>روغن نیمه جامد لادن پنجاه کیلوگرم</p>
+                        </div>
+                        <div class="h2 opacity-50 me-4 ms-2">2</div>
+                        <img src="images/most bought/121965651.jpg" alt="">
+                    </div>
+                    <div class="d-flex flex-row-reverse  align-items-center">
+                        <div class="d-flex align-items-center opacity-75">
+                            <p>روغن نیمه جامد لادن پنجاه کیلوگرم</p>
+                        </div>
+                        <div class="h2 opacity-50 me-4 ms-2">3</div>
+                        <img src="images/most bought/121965651.jpg" alt="">
+                    </div>
+                </div>
+                <div dir="rtl" class="d-flex flex-column px-1">
+                    <div class="d-flex flex-row-reverse align-items-center">
+                        <div class="d-flex align-items-center opacity-75">
+                            <p>روغن نیمه جامد لادن پنجاه کیلوگرم</p>
+                        </div>
+                        <div class="h2 opacity-50 me-4 ms-2">4</div>
+                        <img src="images/most bought/121965651.jpg" alt="">
+                    </div>
+                    <div class="d-flex flex-row-reverse align-items-center">
+                        <div class="d-flex align-items-center opacity-75">
+                            <p>روغن نیمه جامد لادن پنجاه کیلوگرم</p>
+                        </div>
+                        <div class="h2 opacity-50 me-4 ms-2">5</div>
+                        <img src="images/most bought/121965651.jpg" alt="">
+                    </div>
+                    <div class="d-flex flex-row-reverse  align-items-center">
+                        <div class="d-flex align-items-center opacity-75">
+                            <p>روغن نیمه جامد لادن پنجاه کیلوگرم</p>
+                        </div>
+                        <div class="h2 opacity-50 me-4 ms-2">6</div>
+                        <img src="images/most bought/121965651.jpg" alt="">
+                    </div>
+                </div>
+                <div dir="rtl" class="d-flex flex-column px-1">
+                    <div class="d-flex flex-row-reverse align-items-center">
+                        <div class="d-flex align-items-center opacity-75">
+                            <p>روغن نیمه جامد لادن پنجاه کیلوگرم</p>
+                        </div>
+                        <div class="h2 opacity-50 me-4 ms-2">7</div>
+                        <img src="images/most bought/121965651.jpg" alt="">
+                    </div>
+                    <div class="d-flex flex-row-reverse align-items-center">
+                        <div class="d-flex align-items-center opacity-75">
+                            <p>روغن نیمه جامد لادن پنجاه کیلوگرم</p>
+                        </div>
+                        <div class="h2 opacity-50 me-4 ms-2">8</div>
+                        <img src="images/most bought/121965651.jpg" alt="">
+                    </div>
+                    <div class="d-flex flex-row-reverse  align-items-center">
+                        <div class="d-flex align-items-center opacity-75">
+                            <p>روغن نیمه جامد لادن پنجاه کیلوگرم</p>
+                        </div>
+                        <div class="h2 opacity-50 me-4 ms-2">9</div>
+                        <img src="images/most bought/121965651.jpg" alt="">
+                    </div>
+                </div>
+                <div dir="rtl" class="d-flex flex-column px-1">
+                    <div class="d-flex flex-row-reverse align-items-center">
+                        <div class="d-flex align-items-center opacity-75">
+                            <p>روغن نیمه جامد لادن پنجاه کیلوگرم</p>
+                        </div>
+                        <div class="h2 opacity-50 me-4 ms-2">10</div>
+                        <img src="images/most bought/121965651.jpg" alt="">
+                    </div>
+                    <div class="d-flex flex-row-reverse align-items-center">
+                        <div class="d-flex align-items-center opacity-75">
+                            <p>روغن نیمه جامد لادن پنجاه کیلوگرم</p>
+                        </div>
+                        <div class="h2 opacity-50 me-4 ms-2">11</div>
+                        <img src="images/most bought/121965651.jpg" alt="">
+                    </div>
+                    <div class="d-flex flex-row-reverse  align-items-center">
+                        <div class="d-flex align-items-center opacity-75">
+                            <p>روغن نیمه جامد لادن پنجاه کیلوگرم</p>
+                        </div>
+                        <div class="h2 opacity-50 me-4 ms-2">12</div>
+                        <img src="images/most bought/121965651.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container a-4-cards-fix">
+            <img class="w-100 d-block rounded-3 my-5"
+                src="images/a-4-cards/3330380af35adb0bf81242bf05f64122e835707b_1664364637.jpg" alt="not found">
+        </section>
+    </div>
+    <section class="container selected mx-auto">
+        <div class="card-header h4 d-flex align-items-start justify-content-center">
+            <p>منتخب محصولات تخفیف و حراج</p><i class="ri-price-tag-2-fill ms-3 h3"></i>
+        </div>
+        <div class="d-grid">
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/3f8f8aeee7ae8667f2c8af32e702e4f4c6096881_1651041189.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/4dbeabb1aedada886572ca161044f130c022a2e5_1647268680.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/4dbeabb1aedada886572ca161044f130c022a2e5_1647268680.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/4dbeabb1aedada886572ca161044f130c022a2e5_1647268680.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/4dbeabb1aedada886572ca161044f130c022a2e5_1647268680.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/2f631aa78b2c5f8606ac099d2897c6ba189474d2_1650890061.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/4dbeabb1aedada886572ca161044f130c022a2e5_1647268680.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/4dbeabb1aedada886572ca161044f130c022a2e5_1647268680.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/4dbeabb1aedada886572ca161044f130c022a2e5_1647268680.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/4dbeabb1aedada886572ca161044f130c022a2e5_1647268680.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+            <div class="d-flex flex-column p-3">
+                <img class="card-img-top mx-auto"
+                    src="images/sugg2/05ce034fec6e7d601ade267b879b4c4a0948e4af_1656933772.jpg" alt="not found">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div dir="rtl" class="h6 my-0 h-100 d-flex align-items-center">123.000 تومان</div>
+                    <div class="h6 text-white badge text-bg-danger m-0">50%</div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center my-5"></div>
+    </section>
+    <footer class="px-3">
+        <section class="d-flex justify-content-between w-100">
+            <a
+                class="px-3 py-1 d-flex align-items-center opacity-75 justify-content-start text-dark text-decoration-none"><i
+                    class="ri-arrow-up-s-line me-3 h5"></i>بازگشت به بالا</a>
+            <a class="navbar-brand"><img class="w-75" src="images/Logo/digi.svg" alt="not found"></a>
+        </section>
+        <section
+            class="d-flex opacity-75 justify-content-end flex-column-reverse align-items-end align-items-end flex-lg-row">
+            <div>۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</div>
+            <div class=" d-flex flex-row-reverse">
+                <div>تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱ </div>
+                <div class="mx-4">|</div>
+            </div>
+        </section>
+        <section class="d-lg-flex d-none my-5 justify-content-around">
+            <div class="card border-0">
+                <img src="images/testimonials/cash-on-delivery.svg" alt="not found"
+                    class="card-img-top d-block w-50 mx-auto">
+                <div class="mx-auto h6 opacity-50">7 روز هفته 24 ساعته</div>
+            </div>
+            <div class="card border-0">
+                <img src="images/testimonials/days-return.svg" alt="not found"
+                    class="card-img-top d-block w-50 mx-auto">
+                <div class="mx-auto h6 opacity-50">7 روز هفته 24 ساعته</div>
+            </div>
+            <div class="card border-0">
+                <img src="images/testimonials/original-products.svg" alt="not found"
+                    class="card-img-top d-block w-50 mx-auto">
+                <div class="mx-auto h6 opacity-50">7 روز هفته 24 ساعته</div>
+            </div>
+            <div class="card border-0">
+                <img src="images/testimonials/support.svg" alt="not found" class="card-img-top d-block w-50 mx-auto">
+                <div class="mx-auto h6 opacity-50">7 روز هفته 24 ساعته</div>
+            </div>
+            <div class="card border-0">
+                <img src="images/testimonials/express-delivery.svg" alt="not found"
+                    class="card-img-top d-block w-50 mx-auto">
+                <div class="mx-auto h6 opacity-50">7 روز هفته 24 ساعته</div>
+            </div>
+        </section>
+        <section dir="rtl" class="row my-5 foot-list-fix">
+            <div class="col-12 col-lg-8 row">
+                <div class="list-group col-6 col-lg-4 pe-0">
+                    <div class="list-group-item h5 text-end pt-0 pe-0">با دیجی‌کالا 1</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">اتاق خبر دیجیکالا</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">فروش در دیجیکالا</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">فرصت های شغلی</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">گزارش تخلف در دیجیکالا</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">تماس در دیجیکالا</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">تماس در دیجیکالا</div>
+                </div>
+                <div class="list-group col-6 col-lg-4 pe-0">
+                    <div class="list-group-item h5 text-end pt-0 pe-0">با دیجی‌کالا 2</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">اتاق خبر دیجیکالا</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">فروش در دیجیکالا</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">فرصت های شغلی</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">گزارش تخلف در دیجیکالا</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">تماس در دیجیکالا</div>
+                </div>
+                <div class="list-group col-12 col-lg-4 pe-0">
+                    <div class="list-group-item h5 text-end pt-0 pe-0">با دیجی‌کالا 3</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">اتاق خبر دیجیکالا</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">فروش در دیجیکالا</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">فرصت های شغلی</div>
+                    <div class="list-group-item opacity-75 h6 text-end pt-0 pe-0">گزارش تخلف در دیجیکالا</div>
+                </div>
+            </div>
+            <div class="list-group col-12 col-lg-4 pe-0">
+                <div
+                    class="list-group-item d-flex p-0 flex-lg-column align-items-lg-start align-items-center justify-content-between flex-row">
+                    <div class="h5">همراه ما باشید!</div>
+                    <div class="h1 opacity-50 text-nowrap">
+                        <i class="ms-2 ri-linkedin-box-fill"></i>
+                        <i class="ms-2 ri-twitter-fill"></i>
+                        <i class="ms-2 ri-instagram-fill"></i>
+                        <i class="ms-2 ri-github-fill"></i>
+                    </div>
+                </div>
+                <div class="list-group-item h5 p-0">با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید</div>
+                <form action="#">
+                    <div class="input-group">
+                        <input type="search" class="form-control ms-2 bg-primary p-3 bg-opacity-25"
+                            placeholder="ایمیل شما">
+                        <button class="btn-lg bg-danger text-white opacity-25 p-2" type="button">ثبت</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="bg-secondary rounded p-lg-3">
+            <div class="d-flex justify-content-between flex-column-reverse flex-lg-row align-items-center px-3 py-1">
+                <div dir="rtl" class="d-flex align-items-center d-lg-none my-3 text-white">اطلاعات بیشتر<i
+                        class="ri-arrow-left-s-line"></i></div>
+                <div class="justify-content-around justify-content-lg-start d-flex align-items-baseline  w-100">
+                    <div class="bg-white p-1 py-0 my-auto d-none d-lg-block"><i class="ri-more-2-fill h3"></i></div>
+                    <div class="d-flex flex-row flex-wrap justify-content-between">
+                        <img class="my-auto mx-lg-2 p-2" src="images/app/sib-app.svg" alt="not found">
+                        <img class="my-auto mx-lg-2 p-2" src="images/app/sib-app.svg" alt="not found">
+                        <img class="my-auto mx-lg-2 p-2" src="images/app/sib-app.svg" alt="not found">
+                        <img class="my-auto mx-lg-2 p-2" src="images/app/sib-app.svg" alt="not found">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-lg-end justify-content-center align-items-center my-3 my-lg-0">
+                    <h5 class="pb-0 text-white my-auto">
+                        <div class="h-100 my-auto">دانلود اپلیکیشن دیجی کالا</div>
+                    </h5>
+                    <img class="d-block w-5 ms-3" src="images/Logo/footerlogo2.png" alt="">
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="control.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
